@@ -53,4 +53,6 @@ Librerías de Python: Pandas, NumPy, Matplotlib, Scikit-learn.
                 Se realizan dos metodos para montar la carpeta de Google Drive donde esta alojados los datos.
                 Luego se cargan los datos a un dataframe de pandas con el nombre de df_delitos_22
 #### Seccion 3: EDA Analisis Exploratorios de Datos
-                
+                Se busca informacion del dataset como (los nombres de las columnas, tipo de datos, no-null)
+                Se limpian los datos, quitando faltantes y columnas que no vamos a utilizar con el comando drop
+                Se crean don graficas con seaborn 1) barplot para contar los delitos por comunas y 2) boxplot para verificar los outliers
