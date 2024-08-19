@@ -56,3 +56,27 @@ Librerías de Python: Pandas, NumPy, Matplotlib, Scikit-learn.
                 Se busca informacion del dataset como (los nombres de las columnas, tipo de datos, no-null)
                 Se limpian los datos, quitando faltantes y columnas que no vamos a utilizar con el comando drop
                 Se crean don graficas con seaborn 1) barplot para contar los delitos por comunas y 2) boxplot para verificar los outliers
+#### Seccion 4: Feature y Target
+                Se aplica la tecnica de OneHotEncoder para convertir las variables categoricas de la columna Tipo en varias columnas con los diferentes tipos de delitos (Amenazas,Homicidios, Hurto,Lesiones, Robo,Vialidad)
+                Para poder utilizar esas columnas en nuestros modelos lineales
+#### Seccion 5: Modelo de Regresion Logistico
+                Dividimos los datos en Entrenamiento / Test para poder justamente entrenar nuestro modelo
+                Creamos nuestro modelo de Regresion Logistica utilizando la libreria scikit learn 
+                Mostramos los valor que el modelo nos arroja, basados en la bondad de ajuste
+                Luego visualizamos los valores importante de la prediccion del modelo (ejemplo MSE, MAE, M, RSS, RMSE)
+                Se crea un grafico con matplotlib
+                Creamos un modelo statsmodels y visualizamos los valores
+                
+## Conclusiones
+Nuestro modelo de Regresión Logística, no muestra la curva de una función sigmoide, por ende no se está cumpliendo las características del modelo. Las variables tienen una alta correlación.
+
+Tenemos un RMSE: 0.63 y una Bondad de ajuste: 0.59
+
+Que son bajas para considerar este modelo viable.
+
+## Recomendaciones
+
+Por este motivo no podemos recomendar la utilización de este modelo de Regresión Logística, para futuros análisis del dataset del delito en CABA.
+
+Hasta que realicemos las pruebas suficientes para poder mejorar dicho modelo en el futuro
+    
