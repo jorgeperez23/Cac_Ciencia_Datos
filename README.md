@@ -21,7 +21,7 @@ Contemplar:
     Los métodos gráficos para la discusión del modelo.
     Argumentar brevemente aplicaciones para la predicción realizada.
 
-### Introduccion
+### Introducción
   
   Preparación de Datos: Técnicas para limpiar y organizar datos.
   
@@ -45,26 +45,26 @@ Librerías de Python: Pandas, NumPy, Matplotlib, Scikit-learn.
   
   Modelado Predictivo: Construcción y evaluación de modelos.
 
-### Descripcion del Notebook
+### Descripción del Notebook
 
-#### Seccion 1: Importar librerias en Python
-                Se instalan las librerias necesarias para realizar los distintos procedimientos (ejemplo: numpy, pandas, matplotlib, seaborn, sklearn)
-#### Seccion 2: Montado de Google Drive y Carga de Datos
-                Se realizan dos metodos para montar la carpeta de Google Drive donde esta alojados los datos.
+#### Sección 1: Importar librerías en Python
+                Se instalan las librerías necesarias para realizar los distintos procedimientos (ejemplo: numpy, pandas, matplotlib, seaborn, sklearn)
+#### Sección 2: Montado de Google Drive y Carga de Datos
+                Se realizan dos métodos para montar la carpeta de Google Drive donde esta alojados los datos.
                 Luego se cargan los datos a un dataframe de pandas con el nombre de df_delitos_22
-#### Seccion 3: EDA Analisis Exploratorios de Datos
-                Se busca informacion del dataset como (los nombres de las columnas, tipo de datos, no-null)
+#### Sección 3: EDA Análisis Exploratorios de Datos
+                Se busca información del dataset como (los nombres de las columnas, tipo de datos, no-null)
                 Se limpian los datos, quitando faltantes y columnas que no vamos a utilizar con el comando drop
-                Se crean don graficas con seaborn 1) barplot para contar los delitos por comunas y 2) boxplot para verificar los outliers
-#### Seccion 4: Feature y Target
-                Se aplica la tecnica de OneHotEncoder para convertir las variables categoricas de la columna Tipo en varias columnas con los diferentes tipos de delitos (Amenazas,Homicidios, Hurto,Lesiones, Robo,Vialidad)
+                Se crean dos gráficas con seaborn 1) barplot para contar los delitos por comunas y 2) boxplot para verificar los outliers
+#### Sección 4: Feature y Target
+                Se aplica la técnica de OneHotEncoder para convertir las variables categóricas de la columna Tipo en varias columnas con los diferentes tipos de delitos (Amenazas,Homicidios, Hurto,Lesiones, Robo,Vialidad)
                 Para poder utilizar esas columnas en nuestros modelos lineales
-#### Seccion 5: Modelo de Regresion Logistico
+#### Sección 5: Modelo de Regresión Logístico
                 Dividimos los datos en Entrenamiento / Test para poder justamente entrenar nuestro modelo
-                Creamos nuestro modelo de Regresion Logistica utilizando la libreria scikit learn 
+                Creamos nuestro modelo de Regresión Logística utilizando la librería scikit learn 
                 Mostramos los valor que el modelo nos arroja, basados en la bondad de ajuste
-                Luego visualizamos los valores importante de la prediccion del modelo (ejemplo MSE, MAE, M, RSS, RMSE)
-                Se crea un grafico con matplotlib
+                Luego visualizamos los valores importante de la predicción del modelo (ejemplo MSE, MAE, M, RSS, RMSE)
+                Se crea un gráfico con matplotlib
                 Creamos un modelo statsmodels y visualizamos los valores
                 
 ## Conclusiones
